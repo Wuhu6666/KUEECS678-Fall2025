@@ -53,8 +53,9 @@ you have written as a tar file.</p>
 
 <p class="heading1"><strong>Assignment</strong></p>
 <p>Write a program to simulate how the shell interprets the command:</p>
+<!-- find $1 -name '*'.[ch] | xargs grep -c $2 | sort -t : +1.0 -2.0 --numeric --reverse | head --lines=$3 -->
 <pre class="coding1">
-find $1 -name '*'.[ch] | xargs grep -c $2 | sort -t : +1.0 -2.0 --numeric --reverse | head --lines=$3
+find $1 -name '*'.[h] | xargs grep -c $2 | sort -t : +1.0 -2.0 --numeric --reverse | head --lines=$3
 </pre>
 
 <p>This command will search through the directory given by the first argument for 
