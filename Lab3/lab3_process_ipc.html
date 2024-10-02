@@ -59,7 +59,7 @@ find $1 -name '*'.[h] | xargs grep -c $2 | sort -t : +1.0 -2.0 --numeric --rever
 </pre>
 
 <p>This command will search through the directory given by the first argument for 
-files ending in .c or .h and return the N files (where N is the third argument) 
+files ending in .h and return the N files (where N is the third argument) 
 which contain the most occurrences of the string given by the second argument. 
 You can use the lab's Makefile to run a bash script with this command:</p>
 <pre class="coding1">
@@ -70,7 +70,11 @@ make find
 code for your program. When you have finished the program, use the <strong>build</strong>
 target in the lab's Makefile to compile it. The output of the correct program will
 match with the output of the <strong>finder.sh</strong> script which is also
-present in the lab's archive. You can use the <strong>test</strong> target in the
+present in the lab's archive. You can use the 
+<pre class="coding1">
+make test
+</pre>
+target in the
 lab's Makefile to check it against the expected output.<br/><br/>
 <hr width=100%>
 </p>
