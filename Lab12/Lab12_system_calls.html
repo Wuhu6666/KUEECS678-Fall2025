@@ -145,9 +145,9 @@ Table of Contents:</h3>
         <li>
                 Then, create a differential image off this local copy of the base image. Even though we have already created a differential image for lab2,
                 we will need a new differential image. The command is:
-                <br/><br/><b>&gt; qemu-img create -f qcow2 -b [base_image] [diff_image]<span class="Apple-converted-space">&nbsp;</span></b><br /><br/>
+                <br/><br/><b>&gt; qemu-img create -f qcow2 -F qcow2 -b [base_image] [diff_image]<span class="Apple-converted-space">&nbsp;</span></b><br /><br/>
                 This example creates a differential image named 'your_first_name.qcow':
-                <pre style="margin-left: 40px;">qemu-img create -f qcow2 -b eecs678_base.qcow your_first_name.qcow</pre>
+                <pre style="margin-left: 40px;">qemu-img create -f qcow2 -F qcow2 -b eecs678_base.qcow your_first_name.qcow</pre>
                 <font style="color: red;">(Screenshot)</font>
         </li>
 </ol>
